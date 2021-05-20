@@ -9,5 +9,5 @@ ansible-playbook -i inventory/nl --vault-password-file ~/.vault/1.txt home-serve
 Edit secrets
 
 ```
-ansible-vault edit --vault-password-file ~/.vault/1.txt  environments/secrets.yml
+ansible-vault edit --vault-password-file ~/.vault/1.txt  vars/_/secrets.yml
 ```

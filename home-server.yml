@@ -3,9 +3,9 @@
   connection: ssh
 
   vars_files:
-    - "environments/all.yml"
-    - [ "environments/{{ env }}.yml", "environments/empty.yml" ]
-    - "environments/secrets.yml"
+    - "vars/_/all.yml"
+    - [ "environments/{{ env }}.yml", "vars/_/empty.yml" ]
+    - "vars/_/secrets.yml"
 
   roles:
     - roomba
