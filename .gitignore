@@ -1,0 +1,9 @@
+.env
+.nyc_output
+*.sublime-project
+*.sublime-workspace
+!.gitkeep
+.idea
+.history
+.vscode
+*.retry
