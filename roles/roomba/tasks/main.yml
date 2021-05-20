@@ -1,5 +1,4 @@
-- name: Copy valid pg_hba.conf
-  sudo: yes
-  template: src=start_hodor.sh.j2 dest=/opt/start_hodor.sh
+- template: src=start_hodor.sh.j2 dest=/opt/start_hodor.sh
+  become: yes
 
 - cron: name="Clean entrance" special_time=daily job="sh /opt/start_hodor.sh > /dev/null"
