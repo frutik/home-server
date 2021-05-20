@@ -2,8 +2,8 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "precise64"
-  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+  config.vm.box = "ubuntu/trusty64"
+  #config.vm.box_url = "ubuntu/trusty64"
 
   config.vm.network :private_network, ip: "10.0.121.3"
   config.vm.network :public_network if ENV["PUBLIC"]
