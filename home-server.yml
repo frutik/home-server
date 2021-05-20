@@ -1,0 +1,12 @@
+---
+- hosts: all
+  connection: ssh
+
+  vars_files:
+    - "environments/all.yml"
+    - [ "environments/{{ env }}.yml", "environments/empty.yml" ]
+#    - "environments/secrets.yml"
+
+  roles:
+    - roomba
+
