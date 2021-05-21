@@ -1,4 +1,4 @@
 - template: src=start_cleaning.sh.j2 dest=/opt/start_cleaning.sh mode="u+rwx"
   become: yes
 
-- cron: name="Clean entrance" special_time=daily job="sh /opt/start_cleaning.sh > /dev/null"
+- cron: name="Clean entrance" special_time=daily job="sh /opt/start_cleaning.sh > /opt/cleaning.log"
